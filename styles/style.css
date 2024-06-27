@@ -123,6 +123,25 @@ body {
         gap: 3rem;
     }
 
+    .box__one {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .box__two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .box__three {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .box__four {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
 
 
 

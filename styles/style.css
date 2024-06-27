@@ -125,21 +125,21 @@ body {
 
     .box__one {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 2 / 4;
     }
 
     .box__two {
         grid-column: 2;
-        grid-row: 1;
+        grid-row: 1 / 3;
     }
 
     .box__three {
         grid-column: 2;
-        grid-row: 3;
+        grid-row: 3 / 5;
     }
     .box__four {
         grid-column: 3;
-        grid-row: 2;
+        grid-row: 2 / 4;
     }
 
 

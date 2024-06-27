@@ -1,0 +1,129 @@
+:root {
+    --ff-body: "Poppins", sans-serif;
+    --Primary-Red: hsl(0, 78%, 62%);
+    --Primary-Cyan: hsl(180, 62%, 55%);
+    --Primary-Orange: hsl(34, 97%, 64%);
+    --Primary-Blue: hsl(212, 86%, 64%);
+    --Dark-Blue: hsl(234, 12%, 34%);
+    --Light-Gray: hsl(0, 0%, 98%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: var(--ff-body);
+}
+
+/* overall container */
+
+.container {
+    width: 85%;
+    margin: 5rem auto;
+}
+
+/* Heading section */
+.heading {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.heading h1 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--Dark-Blue);
+}
+
+.heading span {
+    display: block;
+    font-weight: 300;
+}
+
+.heading p {
+    color: var(--Grayish-Blue);
+    margin-top: 1rem;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    
+}
+
+.box {
+    background-color: var(--Light-Gray);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px var(--Grayish-Blue);
+    display: flex;
+    flex-direction: column;
+}
+
+.box h2 {
+    margin-top: -0.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: var(--Dark-Blue);
+}
+
+.box p {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--Grayish-Blue);
+    margin-bottom: 2rem;
+}
+
+.box img {
+    width: 4rem;
+    align-self: flex-end;
+}
+
+.box__one {
+    border-top: 4px solid var(--Primary-Cyan);
+}
+
+.box__two {
+    border-top: 4px solid var(--Primary-Red);
+}
+
+.box__three {
+    border-top: 4px solid var(--Primary-Orange);
+}
+
+.box__four {
+    border-top: 4px solid var(--Primary-Blue);
+}
+
+
+@media (min-width: 768px) {
+
+    .heading h1 {
+        font-size: 2.9rem;
+    }
+
+    .heading p {
+        font-size: 1.2rem;
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4 ,1fr);
+        gap: 3rem;
+    }
+
+
+
+
+}
